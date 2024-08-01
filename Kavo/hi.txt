@@ -315,6 +315,13 @@ local themeStyles = {
         TextColor = Color3.fromRGB(255, 255, 255),
         ElementColor = Color3.fromRGB(0, 255, 157)
     },   
+    TikTok = {
+        SchemeColor = Color3.fromRGB(105, 201, 208),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(238, 29, 82),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
+    },
       Vezt = {
         SchemeColor = Color3.fromRGB(255, 140, 0),
         Background = Color3.fromRGB(0, 0, 0),
@@ -451,6 +458,8 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Synapse
         elseif themeList == "TashaciSMed" then
         themeList = themeStyles.TashaciSMed
+        elseif themeList == "TikTok" then
+        themeList = themeStyles.TikTok
         elseif themeList == "Vezt" then
         themeList = themeStyles.Vezt
         elseif themeList == "VeztPur" then
