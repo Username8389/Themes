@@ -315,6 +315,20 @@ local themeStyles = {
         TextColor = Color3.fromRGB(20,20,20),
         ElementColor = Color3.fromRGB(20, 20, 20)
     }, 
+    SyctroNight = {
+        SchemeColor = Color3.fromRGB(227, 27, 27),
+        Background = Color3.fromRGB(10, 10, 10),
+        Header = Color3.fromRGB(5, 5, 5),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
+    },
+      SyctroNightPur = {
+        SchemeColor = Color3.fromRGB(126, 6, 232),
+        Background = Color3.fromRGB(0, 0, 0),
+        Header = Color3.fromRGB(31, 31, 31),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(31, 31, 31)
+    },
     Synapse = {
         SchemeColor = Color3.fromRGB(46, 48, 43),
         Background = Color3.fromRGB(13, 15, 12),
@@ -469,6 +483,10 @@ function Kavo.CreateLib(kavName, themeList)
         elseif themeList == "SpaceTheme" then
         themeList = themeStyles.SpaceTheme
         elseif themeList == "SunTheme" then
+        elseif themeList == "SyctroNight" then
+        themeList = themeStyles.SyctroNight
+    elseif themeList == "SyctroNightPur" then
+        themeList = themeStyles.SyctroNightPur
         themeList = themeStyles.SunTheme
         elseif themeList == "Synapse" then
         themeList = themeStyles.Synapse
