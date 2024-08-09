@@ -70,6 +70,13 @@ local themeStyles = {
         TextColor = Color3.fromRGB(0,255,255),
         ElementColor = Color3.fromRGB(22, 29, 31)
     },
+    Aesthetic = {
+        SchemeColor = Color3.fromRGB(244,164,96),
+        Background = Color3.fromRGB(255,228,181),
+        Header = Color3.fromRGB(255,218,185),
+        TextColor = Color3.fromRGB(210,105,30),
+        ElementColor = Color3.fromRGB(224, 224, 224)
+    },
     BloodTheme = {
         SchemeColor = Color3.fromRGB(227, 27, 27),
         Background = Color3.fromRGB(10, 10, 10),
@@ -386,6 +393,8 @@ function Kavo.CreateLib(kavName, themeList)
     end
     if themeList == "amogus" then
         themeList = themeStyles.amogus
+        elseif themeList == "Aesthetic" then
+        themeList = themeStyles.Aesthetic
         elseif themeList == "ArcHub" then
         themeList = themeStyles.ArcHub
         elseif themeList == "BloodTheme" then
