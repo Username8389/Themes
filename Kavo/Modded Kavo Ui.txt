@@ -514,6 +514,24 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.PurpleTheme
         elseif themeList == "RainbowTheme" then
         themeList = themeStyles.RainbowTheme
+        elseif themeList == "RJTheme1" then
+       themeList = themeStyles.RJTheme1
+        elseif themeList == "RJTheme2" then
+        themeList = themeStyles.RJTheme2
+        elseif themeList == "RJTheme3" then
+        themeList = themeStyles.RJTheme3
+        elseif themeList == "RJTheme3" then
+        themeList = themeStyles.RJTheme3
+        elseif themeList == "RJTheme4" then
+        themeList = themeStyles.RJTheme4
+        elseif themeList == "RJTheme5" then
+        themeList = themeStyles.RJTheme5
+        elseif themeList == "RJTheme6" then
+        themeList = themeStyles.RJTheme6
+        elseif themeList == "RJTheme7" then
+        themeList = themeStyles.RJTheme7
+        elseif themeList == "RJTheme8" then
+        themeList = themeStyles.RJTheme8
         elseif themeList == "RoseTheme" then
 	    themeList = themeStyles.RoseTheme
     	elseif themeList == "Sentinel" then
