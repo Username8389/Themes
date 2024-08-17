@@ -322,6 +322,27 @@ local themeStyles = {
         TextColor = Color3.fromRGB(255,255,255),
         ElementColor = Color3.fromRGB(20, 20, 20)
     },
+    RJTheme9 = {
+        SchemeColor = Color3.fromRGB(128,128,128),
+    	Background = Color3.fromRGB(15,15,15),
+        Header = Color3.fromRGB(15,15,15),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
+    },
+    RJTheme10 = {
+        SchemeColor = Color3.fromRGB(0,128,128),
+    	Background = Color3.fromRGB(15,15,15),
+        Header = Color3.fromRGB(15,15,15),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
+    },
+    RJTheme11 = {
+        SchemeColor = Color3.fromRGB(9,128,73),
+    	Background = Color3.fromRGB(15,15,15),
+        Header = Color3.fromRGB(15,15,15),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(20, 20, 20)
+    },
     RoseTheme = {
         SchemeColor = Color3.fromRGB(188, 143, 143),
         Background = Color3.fromRGB(255, 228, 225),
@@ -515,7 +536,7 @@ function Kavo.CreateLib(kavName, themeList)
         elseif themeList == "RainbowTheme" then
         themeList = themeStyles.RainbowTheme
         elseif themeList == "RJTheme1" then
-       themeList = themeStyles.RJTheme1
+        themeList = themeStyles.RJTheme1
         elseif themeList == "RJTheme2" then
         themeList = themeStyles.RJTheme2
         elseif themeList == "RJTheme3" then
@@ -532,6 +553,12 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.RJTheme7
         elseif themeList == "RJTheme8" then
         themeList = themeStyles.RJTheme8
+        elseif themeList == "RJTheme9" then
+        themeList = themeStyles.RJTheme9
+        elseif themeList == "RJTheme10" then
+        themeList = themeStyles.RJTheme10
+        elseif themeList == "RJTheme11" then
+        themeList = themeStyles.RJTheme11
         elseif themeList == "RoseTheme" then
 	    themeList = themeStyles.RoseTheme
     	elseif themeList == "Sentinel" then
