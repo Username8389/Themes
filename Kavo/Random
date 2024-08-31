@@ -785,7 +785,6 @@ function Kavo.CreateLib(kavName, themeList, img)
     pages.BorderSizePixel = 0
     pages.Position = UDim2.new(0.299047589, 0, 0.122641519, 0)
     pages.Size = UDim2.new(0, 360, 0, 269)
-    pages.Image = "rbxassetid://0"
 
     Pages.Name = "Pages"
     Pages.Parent = pages
