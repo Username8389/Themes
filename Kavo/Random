@@ -650,6 +650,7 @@ function Kavo.CreateLib(kavName, themeList, img)
     Main.ClipsDescendants = true
     Main.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
     Main.Size = UDim2.new(0, 525, 0, 318)
+    Main.AnchorPoint = Vector2.new(0.5, 0.5)
 
     MainCorner.CornerRadius = UDim.new(0, 4)
     MainCorner.Name = "MainCorner"
@@ -747,7 +748,6 @@ function Kavo.CreateLib(kavName, themeList, img)
 		tab:Destroy()
 	end
 
-   
     MainSide.Name = "MainSide"
     MainSide.Parent = Main
     MainSide.BackgroundColor3 = themeList.Header
@@ -785,6 +785,7 @@ function Kavo.CreateLib(kavName, themeList, img)
     pages.BorderSizePixel = 0
     pages.Position = UDim2.new(0.299047589, 0, 0.122641519, 0)
     pages.Size = UDim2.new(0, 360, 0, 269)
+    pages.Image = "rbxassetid://0"
 
     Pages.Name = "Pages"
     Pages.Parent = pages
