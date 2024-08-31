@@ -688,6 +688,42 @@ function Kavo.CreateLib(kavName, themeList)
     title.TextSize = 16.000
     title.TextXAlignment = Enum.TextXAlignment.Left
 
+  if game:GetService("UserInputService").TouchEnabled then
+		local frame = Instance.new("Frame")
+	    	local q = Instance.new("ImageButton")
+	    	local i = Instance.new("UIStroke", q)
+	    	Instance.new("UICorner", q)
+	
+		frame.BackgroundTransparency = 1
+		frame.Name = "OpenGui"
+		frame.Visible = false
+		frame.Parent = ScreenGui
+		frame.Size = UDim2.new(0, 0, 0, 0)
+		
+		q.Parent = frame
+		q.Size = UDim2.new(1,0,1,0)
+		q.Image = img
+	
+		i.Thickness = 4
+		i.Color = Color3.new(1,1,1)
+
+		q.TouchTap:Connect(function()
+			game.TweenService:Create(Main, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+				Size = UDim2.new(0, 525, 0, 318),
+				Position = UDim2.new(0.5, 0, 0.5, 0)
+			}):Play()
+			game.TweenService:Create(frame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+				Size = UDim2.new(0,0,0,0),
+				Position = UDim2.new(0.5, 0, 0.5, 0)
+			}):Play()
+			game.TweenService:Create(i, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+				Thickness = 0
+			}):Play()
+			wait(0.1)
+			frame.Visible = false
+		end)
+		
+		Kavo.DraggingEnabled(frame, q) 
    
    tab.Name = "tab"
 		tab.Parent = MainHeader
@@ -711,7 +747,7 @@ function Kavo.CreateLib(kavName, themeList)
 		end)
 	else
 		tab:Destroy()
-	end
+	end)
    
     MainSide.Name = "MainSide"
     MainSide.Parent = Main
