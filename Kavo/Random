@@ -731,7 +731,7 @@ function Kavo.CreateLib(kavName, themeList, img)
 		tab.Position = UDim2.new(0.949999988, 0, 0.137999997, 0)
 		tab.Size = UDim2.new(0, 21, 0, 21)
 		tab.ZIndex = 2
-		tab.Image = "rbxassetid://10137941941"
+		tab.Image = "rbxassetid://3926305904"
 		tab.MouseButton1Click:Connect(function()
 			game.TweenService:Create(Main, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				Size = UDim2.new(0,0,0,0),
@@ -739,7 +739,7 @@ function Kavo.CreateLib(kavName, themeList, img)
 			frame.Visible = true
 			game.TweenService:Create(frame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				Position = UDim2.new(0, Main.AbsolutePosition.X, 0, Main.AbsolutePosition.Y),
-				Size = UDim2.new(0,60,0,60)
+				Size = UDim2.new(0,45,0,45)
 			}):Play()
 			game.TweenService:Create(i, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				Thickness = 4
