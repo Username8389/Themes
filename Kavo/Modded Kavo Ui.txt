@@ -133,6 +133,20 @@ local themeStyles = {
         TextColor = Color3.fromRGB(255,255,255),
         ElementColor = Color3.fromRGB(20, 20, 20)
     },
+    Flame = {
+        SchemeColor = Color3.fromRGB(255, 112, 67), -- Bright orange
+        Background = Color3.fromRGB(239, 108, 0), -- Dark orange
+        Header = Color3.fromRGB(255, 87, 34), -- Medium orange
+        TextColor = Color3.fromRGB(33, 33, 33), -- Dark gray
+        ElementColor = Color3.fromRGB(255, 204, 128) -- Light orange
+    },
+    Forest = {
+        SchemeColor = Color3.fromRGB(56, 142, 60), -- Dark green
+        Background = Color3.fromRGB(27, 94, 32), -- Forest green
+        Header = Color3.fromRGB(46, 125, 50), -- Medium green
+        TextColor = Color3.fromRGB(245, 245, 245), -- Light gray
+        ElementColor = Color3.fromRGB(67, 160, 71) -- Light green
+    },
     GoofyTheme = {
         SchemeColor = Color3.fromRGB(178, 102, 255),
         Background = Color3.fromRGB(160, 205, 230),
@@ -168,6 +182,13 @@ local themeStyles = {
         TextColor = Color3.fromRGB(255,255,255),
         ElementColor = Color3.fromRGB(24, 24, 24)
     }, 
+    Kali = {
+    SchemeColor = Color3.fromRGB(255, 0, 0), -- Supra Red
+    Background = Color3.fromRGB(30, 30, 30), -- Carbon Black
+    Header = Color3.fromRGB(255, 165, 0), -- Racing Orange
+    TextColor = Color3.fromRGB(255, 255, 255), -- Pure White
+    ElementColor = Color3.fromRGB(60, 60, 60) -- Gunmetal Gray
+    },
     LemonTheme = {
         SchemeColor = Color3.fromRGB(0, 0, 0),
         Background = Color3.fromRGB(0, 0, 0),
@@ -216,6 +237,20 @@ local themeStyles = {
         Header = Color3.fromRGB(57, 81, 105),
         TextColor = Color3.fromRGB(255, 255, 255),
         ElementColor = Color3.fromRGB(52, 74, 95)
+    },
+    Moon = {
+    SchemeColor = Color3.fromRGB(44, 62, 80), -- Deep blue
+    Background = Color3.fromRGB(24, 32, 48), -- Dark navy
+    Header = Color3.fromRGB(34, 45, 62), -- Medium navy
+    TextColor = Color3.fromRGB(173, 216, 230), -- Light sky blue
+    ElementColor = Color3.fromRGB(48, 57, 72) -- Slightly lighter navy
+    },
+    Mystic = {
+        SchemeColor = Color3.fromRGB(0, 128, 128), -- Teal
+        Background = Color3.fromRGB(128, 0, 0), -- Maroon
+        Header = Color3.fromRGB(100, 0, 0), -- Medium darker maroon
+        TextColor = Color3.fromRGB(0, 0, 0), -- Black
+        ElementColor = Color3.fromRGB(0, 100, 0) -- Dark green
     },
     NormalHub = {
         SchemeColor = Color3.fromRGB(255, 128, 0),
@@ -350,6 +385,13 @@ local themeStyles = {
         TextColor = Color3.fromRGB(128, 0, 0),
         ElementColor = Color3.fromRGB(255, 182, 193)
     },
+    Royal = {
+        SchemeColor = Color3.fromRGB(92, 107, 192), -- Light blue
+        Background = Color3.fromRGB(63, 81, 181), -- Blue
+        Header = Color3.fromRGB(48, 63, 159), -- Medium blue
+        TextColor = Color3.fromRGB(255, 255, 255), -- White
+        ElementColor = Color3.fromRGB(92, 107, 192) -- Light blue
+    },
     Sentinel = {
         SchemeColor = Color3.fromRGB(230, 35, 69),
         Background = Color3.fromRGB(32, 32, 32),
@@ -384,6 +426,20 @@ local themeStyles = {
         Header = Color3.fromRGB(0, 128, 255),
         TextColor = Color3.fromRGB(255, 255, 255),
         ElementColor = Color3.fromRGB(128, 128, 128)
+    },
+    Sunrise = {
+    SchemeColor = Color3.fromRGB(255, 183, 77), -- Warm yellow
+    Background = Color3.fromRGB(255, 111, 77), -- Soft orange
+    Header = Color3.fromRGB(255, 138, 101), -- Light orange
+    TextColor = Color3.fromRGB(33, 33, 33), -- Dark gray
+    ElementColor = Color3.fromRGB(255, 204, 128) -- Pale yellow
+    },
+    Sunset = {
+        SchemeColor = Color3.fromRGB(255, 94, 77), -- Warm coral
+        Background = Color3.fromRGB(255, 138, 101), -- Salmon
+        Header = Color3.fromRGB(255, 111, 89), -- Light coral
+        TextColor = Color3.fromRGB(33, 33, 33), -- Dark gray
+        ElementColor = Color3.fromRGB(244, 143, 177) -- Pink
     },
     SunTheme = {
         SchemeColor = Color3.fromRGB(255, 0, 0),
@@ -497,6 +553,10 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Darkrai
         elseif themeList == "DarkTheme" then
         themeList = themeStyles.DarkTheme
+        elseif themeList == "Flame" then -- NEW COLORS THEME
+        themeList = themeStyles.Flame
+        elseif themeList == "Forest" then -- NEW COLORS THEME
+        themeList = themeStyles.Forest
         elseif themeList == "GoofyTheme" then
         themeList = themeStyles.GoofyTheme
         elseif themeList == "GrapeTheme" then
@@ -507,6 +567,8 @@ function Kavo.CreateLib(kavName, themeList)
     	themeList = themeStyles.Hub
         elseif themeList == "Impact" then
         themeList = themeStyles.Impact
+        elseif themeList == "Kali" then -- NEW COLORS THEME
+        themeList = themeStyles.Kali
         elseif themeList == "LemonTheme" then
         themeList = themeStyles.LemonTheme
         elseif themeList == "LightBlue" then
@@ -521,6 +583,10 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Luna
         elseif themeList == "Midnight" then
         themeList = themeStyles.Midnight
+        elseif themeList == "Moon" then -- NEW COLORS THEME
+        themeList = themeStyles.Moon
+        elseif themeList == "Mystic" then -- NEW COLORS THEME
+        themeList = themeStyles.Mystic
         elseif themeList == "NormalHub" then
         themeList = themeStyles.NormalHub
         elseif themeList == "Ocean" then
@@ -561,6 +627,8 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.RJTheme11
         elseif themeList == "RoseTheme" then
 	    themeList = themeStyles.RoseTheme
+	elseif themeList == "Royal" then -- NEW COLORS THEME
+        themeList = themeStyles.Royal
     	elseif themeList == "Sentinel" then
         themeList = themeStyles.Sentinel
         elseif themeList == "Serpent" then
@@ -571,6 +639,10 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.ShoeTheme
         elseif themeList == "SpaceTheme" then
         themeList = themeStyles.SpaceTheme
+        elseif themeList == "Sunrise" then -- NEW COLORS THEME
+        themeList = themeStyles.Sunrise
+        elseif themeList == "Sunset" then -- NEW COLORS THEME
+        themeList = themeStyles.Sunset 
         elseif themeList == "SunTheme" then
         themeList = themeStyles.SunTheme
         elseif themeList == "Synapse" then
